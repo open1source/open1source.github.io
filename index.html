@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Evil GIF Background</title>
+<style>
+body {
+background-image: url('https://cdn.discordapp.com/attachments/1273420668335296595/1273692330947252265/togif.gif?ex=66bf89eb&is=66be386b&hm=b6e6365e995b7030b61a1b89f55c2393d17e799b11612383e7776c2dc6163e79&');
+background-size: cover;
+background-repeat: no-repeat;
+color: green; /* Set text color to green */
+text-align: center; /* Center align text */
+}
+
+button {
+padding: 10px 20px;
+background-color: red; /* Color the button red for danger */
+color: white; /* Text color on the button */
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin-right: 10px;
+}
+
+#discordButton {
+padding: 10px 20px;
+background-color: purple; /* Color the Discord button purple to draw attention */
+color: white; /* Text color on the button */
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+</style>
+</head>
+<body>
+<p style="color: green;">Your server got raided/nuked, bozo!</p>
+<button onclick="playAudio()">Play Chaotic Audio</button>
+<button id="discordButton" onclick="redirectToDiscord()">Discord</button>
+<audio id="chaoticAudio">
+<source src="YOUR_AUDIO_URL_HERE" type="audio/mpeg"> <!-- Replace YOUR_AUDIO_URL_HERE with the direct URL of the audio file -->
+</audio>
+
+<script>
+function playAudio() {
+var audio = document.getElementById("chaoticAudio");
+audio.play();
+}
+
+function redirectToDiscord() {
+window.location.href = 'https://discord.gg/sxceWHeYBg';
+}
+</script>
+</body>
+</html>
